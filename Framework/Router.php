@@ -6,6 +6,7 @@ class Router
 {
     protected $routes = [];
 
+
     public function registerRoutes($method, $uri, $action)
     {
         list($controller, $controllerMethod) = explode('@', $action);
@@ -22,19 +23,34 @@ class Router
         $this->registerRoutes('GET', $uri, $controller);
     }
 
+    public function post($uri, $controller)
+    {
+        $this->registerRoutes('POST', $uri, $controller);
+    }
+
+    public function put($uri, $controller)
+    {
+        $this->registerRoutes('PUT', $uri, $controller);
+    }
+
+
+    public function delete($uri, $controller)
+    {
+        $this->registerRoutes('DELETE', $uri, $controller);
+    }
+
+
     public function route($uri, $method)
     {
         $requestMethod = $_SERVER['REQUEST_METHOD'];
-
         foreach ($this->routes as $route) {
             if ($route['uri'] === $uri && $route['method'] === $requestMethod) {
 
-                $controller = 'app\\controllers\\' . $route['controller'];
+                $controller = 'App\\controllers\\' . $route['controller'];
                 $controllerMethod = $route['controllerMethod'];
 
-                // this is the end Note: backslash tau. double backslash
-
-                echo $controller;
+                $controllerInstance = new $controller();
+                $controllerInstance->$controllerMethod();
             }
         }
     }
