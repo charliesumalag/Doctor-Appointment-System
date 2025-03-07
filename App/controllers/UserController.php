@@ -16,4 +16,12 @@ class UserController
     {
         loadView('users/register');
     }
+    public function createAccount()
+    {
+        loadView('users/create');
+    }
+    public function handleSignup()
+    {
+        redirect('/createaccount');
+    }
 }

@@ -34,3 +34,9 @@ function inspect($value)
     var_dump($value);
     echo '</pre>';
 }
+
+function redirect($url)
+{
+    header("Location: {$url}");
+    exit;
+}

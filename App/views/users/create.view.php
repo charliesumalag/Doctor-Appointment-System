@@ -13,30 +13,27 @@
     <div class="wrapper">
         <main class="main">
             <h1>Let's Get Started</h1>
-            <p class="par-text">Enter Personal Details to Continue</p>
-            <form class="form" action="/signup" method="POST">
+            <p class="par-text">Create User Account</p>
+            <form class="form" action="" method="POST">
                 <div class="input-container">
-                    <label for="">Name</label>
-                    <div class="input-name-container">
-                        <input type="text" placeholder="First">
-                        <input type="text" placeholder="Last">
-                    </div>
+                    <label for="">Email</label>
+                    <input type="email">
                 </div>
                 <div class="input-container">
-                    <label for="">Address</label>
+                    <label for="">Mobile Number</label>
                     <input type="text">
                 </div>
                 <div class="input-container">
-                    <label for="">NIC Number</label>
-                    <input type="text">
+                    <label for="">Password</label>
+                    <input type="password">
                 </div>
                 <div class="input-container">
-                    <label for="">Date of Birth</label>
-                    <input type="date">
+                    <label for="">Confirm Password</label>
+                    <input type="password">
                 </div>
                 <div class="button-container">
                     <button type="reset">Reset</button>
-                    <button type="submit" class="next">Next</button>
+                    <button type="submit" class="next">Signup</button>
                 </div>
             </form>
             <p class="already">Already have an Account? <a href="/login"><span>Login</span></a></p>
