@@ -64,3 +64,8 @@ button{
     color: blue;
     cursor: pointer;
 }
+.login{
+    width: 100%;
+    background-color: blue;
+    color: white;
+}
