@@ -8,4 +8,6 @@ $router->get('/createaccount', 'UserController@createAccount');
 $router->get('/admindashboard', 'AdminDashboard@index');
 
 
+
 $router->post('/signup', 'UserController@handleSignup');
+$router->post('/createaccount', 'UserController@createAccount');

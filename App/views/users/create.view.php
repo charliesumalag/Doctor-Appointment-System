@@ -1,3 +1,8 @@
+<?php
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -14,22 +19,22 @@
         <main class="main">
             <h1>Let's Get Started</h1>
             <p class="par-text">Create User Account</p>
-            <form class="form" action="" method="POST">
+            <form class="form" action="/createaccount" method="POST">
                 <div class="input-container">
                     <label for="">Email</label>
-                    <input type="email">
+                    <input type="email" name="email">
                 </div>
                 <div class="input-container">
                     <label for="">Mobile Number</label>
-                    <input type="text">
+                    <input type="text" name="mobilenumber">
                 </div>
                 <div class="input-container">
                     <label for="">Password</label>
-                    <input type="password">
+                    <input type="password" name="password">
                 </div>
                 <div class="input-container">
                     <label for="">Confirm Password</label>
-                    <input type="password">
+                    <input type="password" name="confirmpassword">
                 </div>
                 <div class="button-container">
                     <button type="reset">Reset</button>

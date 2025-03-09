@@ -3,7 +3,11 @@ require __DIR__ . '/../vendor/autoload.php';
 require '../helper.php';
 require '../Framework/Router.php';
 
+use Framework\Session;
+
 use Framework\Router;
+
+Session::start();
 
 $router = new Router();
 $routes = require basepath('routes.php');

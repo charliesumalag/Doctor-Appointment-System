@@ -18,21 +18,21 @@
                 <div class="input-container">
                     <label for="">Name</label>
                     <div class="input-name-container">
-                        <input type="text" placeholder="First">
-                        <input type="text" placeholder="Last">
+                        <input type="text" name="firstname" placeholder="First">
+                        <input type="text" name="lastname" placeholder="Last">
                     </div>
                 </div>
                 <div class="input-container">
                     <label for="">Address</label>
-                    <input type="text">
+                    <input type="text" name="address">
                 </div>
                 <div class="input-container">
                     <label for="">NIC Number</label>
-                    <input type="text">
+                    <input type="text" name="nicnumber">
                 </div>
                 <div class="input-container">
                     <label for="">Date of Birth</label>
-                    <input type="date">
+                    <input type="date" name="dateofbirth">
                 </div>
                 <div class="button-container">
                     <button type="reset">Reset</button>
